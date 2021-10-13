@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="500.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Yonetim">
+   <children>
+      <Label layoutX="141.0" layoutY="43.0" prefHeight="19.0" prefWidth="176.0" text="KAYITLI KULANICILAR">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="ktablo" layoutX="88.0" layoutY="97.0" onMouseClicked="#secme" prefHeight="284.0" prefWidth="273.0">
+        <columns>
+          <TableColumn fx:id="kisi_ID" prefWidth="40.0" text="ID" />
+          <TableColumn fx:id="kadi" prefWidth="113.0" text="Kullanıcı Adı" />
+            <TableColumn fx:id="sifre" prefWidth="117.0" text="Şİfre" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_geri" layoutX="101.0" layoutY="411.0" mnemonicParsing="false" onAction="#geriye_git" style="-fx-background-color: green;" text="ÇIKIŞ YAP" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="11.0" />
+         </font></Button>
+      <Button fx:id="btn_sil" layoutX="191.0" layoutY="411.0" mnemonicParsing="false" onAction="#kullanici_sil" style="-fx-background-color: red;" text="Kullanıcı Sil" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="11.0" />
+         </font></Button>
+      <Button fx:id="btn_yenile" layoutX="293.0" layoutY="411.0" mnemonicParsing="false" onAction="#yenile" style="-fx-background-color: BLUE;" text="Yenile" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="11.0" />
+         </font></Button>
+      <Label fx:id="lbl" layoutX="27.0" layoutY="373.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

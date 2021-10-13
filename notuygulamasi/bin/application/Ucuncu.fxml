@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="550.0" minWidth="650.0" style="-fx-background-color: #34b862; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Form3">
+   <children>
+      <TableView fx:id="tablo" layoutX="14.0" layoutY="49.0" onMouseClicked="#tablo_tiklama" prefHeight="307.0" prefWidth="622.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="49.0" text="SIRA" />
+          <TableColumn fx:id="tarih" prefWidth="73.0" text="TARİH" />
+            <TableColumn fx:id="konu" prefWidth="145.0" text="KONU" />
+            <TableColumn fx:id="not" prefWidth="362.0" text="NOT" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="43.0" fitWidth="42.0" layoutX="172.0" layoutY="3.0">
+         <image>
+            <Image url="@../../ayar.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn1" layoutX="102.0" layoutY="476.0" mnemonicParsing="false" onAction="#duzenle" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: yellow;" text="DÜZENLE">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btn3" layoutX="25.0" layoutY="476.0" mnemonicParsing="false" onAction="#sil" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: yellow; -fx-background-radius: 5;" text="SİL">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btn2" layoutX="193.0" layoutY="476.0" mnemonicParsing="false" onAction="#ekleme_sayfasina_git" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: turquoise;" text="NOT EKLE">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="tf1" layoutX="14.0" layoutY="401.0" prefHeight="25.0" prefWidth="107.0" />
+      <TextField fx:id="tf2" layoutX="142.0" layoutY="376.0" prefHeight="63.0" prefWidth="218.0" />
+      <TextArea fx:id="ta" layoutX="382.0" layoutY="376.0" prefHeight="163.0" prefWidth="218.0" />
+      <Label fx:id="label1" layoutX="13.0" layoutY="368.0" prefHeight="17.0" prefWidth="24.0" />
+      <Label layoutX="37.0" layoutY="369.0" prefHeight="17.0" prefWidth="96.0" text=".MESAJIN TARİHİ">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font></Label>
+      <Label layoutX="201.0" layoutY="360.0" text="KONU">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="456.0" layoutY="360.0" prefHeight="17.0" prefWidth="42.0" text="NOT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="btn4" layoutX="300.0" layoutY="476.0" mnemonicParsing="false" onAction="#yenile" style="-fx-background-color: yellow; -fx-background-radius: 5;" text="YENİLE">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="221.0" layoutY="15.0" prefHeight="19.0" prefWidth="244.0" text="DÜZENLEME VE LİSTELEME SAYFASI" textFill="#573636">
+         <font>
+            <Font name="Lucida Bright Demibold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn5" layoutX="600.0" layoutY="7.0" mnemonicParsing="false" onAction="#cik" prefHeight="36.0" prefWidth="30.0" style="-fx-background-image: url('file:C:/Users/EMRAH/eclipse-workspace/notuygulamasi/kapat.png');" />
+      <Label layoutX="533.0" layoutY="16.0" prefHeight="17.0" prefWidth="60.0" text="ÇIKIŞ YAP" textFill="#0c2057">
+         <font>
+            <Font name="SansSerif Bold" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
